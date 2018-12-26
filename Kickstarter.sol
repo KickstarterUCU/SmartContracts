@@ -10,7 +10,6 @@ contract Kickstarter is Ownable {
     constructor() public {
         projectsId = 0;
         _balances[owner()] = 0;
-        createProject(owner(), 400);
     }
   
     function balanceOf(address owner) public view returns (uint256) {
